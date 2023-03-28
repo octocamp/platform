@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>weather ☁️</title>
+<link rel="stylesheet" href="weather.css" id="theme">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/feather-icons"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- partial:index.partial.html -->
+    <section class="weath">
+<div id="app">
+  <header>
+    <h1>{{ appTitle }}</h1>
+  </header>
+  <display v-bind:res="weatherRes"></display>
+  <actions v-bind:location="cityName" @search="searchcity"></actions>
+</div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js'></script><script  src="weather.js"></script>

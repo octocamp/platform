@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>OctoCamp 🎓</title>
+<link rel="stylesheet" href="octo.css" id="mode">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/feather-icons"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+     <h1>{'<spanA>Octo</spanA><spanB>Camp</spanB>'}</h1>
+     <h3>🌙 Ramadan Kareem</h3>
+            <nav>
+                <ul id="menuList"> 
+ <li><a href="octo.html">Home</a></li>
+<li><a href="libraries.html">Octo Game</a></li>
+ <li><a href="academy.html">Academy</a></li>
+ <li><a href="weather.html">Weather and temp</a></li>
+ <li><a href="#">Camp</a></li>
+ <li><a href="coding.html">Coding</a></li>
+ <li><a href="#">Languages</a></li>
+<li><a href="month.html">Sass/Scss month</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="quiz.html">Quiz test</a></li>
+ <li><a href="#">Privacy</a></li>
+ <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+ <div class="container" onclick="togglemenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+    </header>
+    <script>
+    var menuList = document.getElementById("menuList");
+    
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+    
+    <section class="home">
+        <!-- partial:index.partial.html -->
+<div class='container'>
+  <div class='form-container'>
+    <div class='form-tab'>
+      <div class='search-field'>
+        <i data-feather="search" class='search-icon'></i>
+        <p class='search-placeholder'>Reports or documents</p>
+        <form><input autocomplete="off" type='text' pattern='\S+.*' name='input' id='input' class='text-field'></form>
+      </div>
+      <div class='search-btn'>
+        <p>search</p>
+      </div>
+    </div>
+  </div>
+  <div class='resoult-tab'>
+    <div class='ul-title'>
+      <p>Recent Search</p>
+    </div>
+    <div class='ul'>
+    <a href="#"><div class='li li-1'>
+        <div class='li-icon'><i data-feather="clipboard" class='icon'></i></div>
+    <div class='li-text'>Getting info</div>
+      </div></a>
+   <a href="#"> <div class='li li-2'>
+        <div class='li-icon'><i data-feather="users" class='icon'></i></div>
+   <div class='li-text'>Community clubs</div>
+      </div></a>
+    <a href="#"><div class='li li-3'>
+        <div class='li-icon'><i data-feather="calendar" class='icon'></i></div>
+      <div class='li-text'>Code months</div>
+      </div></a>
+  <a href="#"> <div class='li li-4'>
+        <div class='li-icon'><i data-feather="user" class='icon'></i></div>
+      <div class='li-text'>Coding levels </div>
+      </div></a>
+    </div>
+  </div>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="octo.js"></script>
+  
+ 
+  
+  
+ <div class="register">
+      <h1>Register</h1>
+      
+      <form action="" method="POST">
+  <label id="tix" for="fname" class="name">Name:</label><br>
+  <input type="text" class="name" id="fname" name="fname" placeholder="User name..." required><br>
+  <label id="tix" for="lname" class="name">Email:</label><br>
+  <input type="email" class="email" id="fname" name="lname" placeholder="Your correct email..." required><br>
+  <label id="tix" for="fname" class="password">Password:</label><br>
+  <input type="password" class="password" id="fname" name="password" placeholder="Write email password" required><br>
+
+ <br>
+ <div class="button">
+  <button type="submit" class="btn btn-primary">Send</button>
+  </div>
+</form> 
+  </div>
+  
+  
+<a id="script" href="#">Scss month... <spanA>|</spanA> </a>
+    </section>
+    
+    
+    <section class="about">
+      <h1>About Camp platform:</h1>
+     <p>Some actions which is most useful for users.</p>
+        
+        <div class="boxes">
+            <div class="box">
+       <img src="camping.png">
+       <h3>Camping</h3>
+       <h4>More hardest codes</h4>
+       <h5>to get big knowledge</h5>
+            </div>
+            <div class="box">
+        <img src="message.png">
+       <h3>Community</h3>
+     <h4>Talk with CEO founders</h4>
+       <h5>in community room</h5>
+            </div>
+            <div class="box">
+        <img src="online.png">
+       <h3>Learning</h3>
+       <h4>Choose easy way</h4>
+   <h5>to learn online with camp</h5>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="more">
+        
+        <div class="reference"><a id="pay" href="#" target="_blank">Camp blog</a></div>
+
+<div class="container" onload="changePos()">
+  <div class="banner">RECENT UPDATES</div>
+  <ul class="ultra">
+   
+    <li class="tab-0">
+      
+      <strong>SECURITY</strong> <span class="date">FEBRUARY 15 </span></br>
+<p>
+System security is working not bad with normal speed. Anytime will be attack from social network. With our security we will protect 🔒</p>
+    </li>
+    <li class="tab-1">
+      
+      <strong>SCRIPT MONTH</strong> <span class="date">FEBRUARY 15</span></br>
+<p>
+Few days for end our python 🐍 month. We recommend to get more info in this month...</p>
+         
+    </li>
+    <li class="tab-2"> 
+      
+      <strong>CHARACTER</strong> <span class="date">FEBRUARY 16</span></br>
+<p>
+Rules can now compare numerical metadata. For example, reviews could trigger if <strong><code>::customer_age:: < 21 </code></strong> (if you pass in custom metadata for a customer's age). </p>
+      
+    </li>
+<li class="tab-3">
+ <strong>RADAR</strong> <span class="date">FEBRUARY 19 </span></br>
+<p>
+Upgrade to version 2.0 of our iOS Dashboard app, which includes a new design, an updated home screen, and iPhone X support.</p>
+</li>
+<li class="tab-4">
+ <strong>RADAR</strong> <span class="date">FEBRUARY 20 </span></br>
+<p>
+Radar will now automatically allow any payment that is protected from being disputed for fraud due to a liability shift. For example, if the payment is verified by 3D Secure.</p>
+</li>
+
+    </ul>
+</div>
+<!-- partial -->
+  <script  src="chart.js"></script>
+
+          
+          
+          
+          
+          
+          
+          <div class="frame">
+  <div class="card">
+  	<div class="header">
+			<span class="title big">Weekly report</span>
+			<span class="date small">01. Feb - 15. Feb</span>
+			<span class="type small">Revenue</span>
+			<span class="value">689.09</span>
+		</div>
+		<div class="clearfix"></div>
+		<div class="parameter">
+			<span class="red">Views</span>
+			<span class="blue">Purchases</span>
+		</div>
+		<div class="statistic">
+			<div class="line-1"></div>
+			<div class="line-2"></div>
+			<div class="line-3"></div>
+			<div class="data red">
+				<svg>
+					<polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19"></polyline>    
+				</svg>
+				<div class="points">
+					<div class="point-1">
+						<div class="tooltip">458</div>
+					</div>
+					<div class="point-2">
+						<div class="tooltip">812</div>
+					</div>
+					<div class="point-3">
+						<div class="tooltip">746</div>
+					</div>
+					<div class="point-4">
+						<div class="tooltip">877</div>
+					</div>
+					<div class="point-5">
+						<div class="tooltip">517</div>
+					</div>
+					<div class="point-6">
+						<div class="tooltip">434</div>
+					</div>
+					<div class="point-7">
+						<div class="tooltip">458</div>
+					</div>
+				</div>
+			</div>
+			<div class="data blue">
+				<svg>
+					<polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64"></polyline>    
+				</svg>
+				<div class="points">
+					<div class="point-1">
+						<div class="tooltip">26</div>
+					</div>
+					<div class="point-2">
+						<div class="tooltip">41</div>
+					</div>
+					<div class="point-3">
+						<div class="tooltip">22</div>
+					</div>
+					<div class="point-4">
+						<div class="tooltip">36</div>
+					</div>
+					<div class="point-5">
+						<div class="tooltip">25</div>
+					</div>
+					<div class="point-6">
+						<div class="tooltip">13</div>
+					</div>
+					<div class="point-7">
+						<div class="tooltip">20</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="days">
+			<span class="day">Mon</span>
+			<span class="day">Tue</span>
+			<span class="day">Wed</span>
+			<span class="day">Thu</span>
+			<span class="day">Fri</span>
+			<span class="day">Sat</span>
+			<span class="day">Sun</span>
+		</div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://100dayscss.com/codepen/js/jquery.min.js'></script><script  src="./script.js"></script>
+</section>
+
+
+
+
+<section class="more2">
+    
+    <div class="accordion-menu">
+        <ul>
+            <li>
+                <input type="checkbox" checked>
+            <i class="arrow"></i>
+       <h2><i class="fas fa-code"></i>Community</h2>
+                <p>Our community is very familiar. We have more smart engineers.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-question"></i>Security</h2>
+                <p>Octo camp security is strong than our web platforms. 'Protect  hacking actions!!!'
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Libraries</h2>
+                <p>
+                    In libraries users can get new languages. For example: 'Typescript', 'C#', 'NodeJS'...
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>CEO Clubs</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Users actions</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Coding month</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>OctoLab</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Applications</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Company members</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Camp partners</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i class="arrow"></i>
+                <h2><i class="fas fa-laugh"></i>Connect func.</h2>
+                <p>By making the open state default for when :checked isn't 
+                    detected, we can make this system accessable for browsers 
+                    that don't recognize :checked.
+                </p>
+            </li>
+        </ul>
+    </div>
+    
+    <img src="jave.png">
+    <h4>Mobile data reversing</h4>
+    <p id="ree"><spanA>Java</spanA> coding for creating algorithms...</p>
+  <a id="reg" href="#">Registration </a>
+</section>
+
+
+
+<section class="footer">
+    <ul>
+ <a href=""><li>Questions</li></a>
+ <a href=""><li>About Developers</li></a>
+ <a href=""><li>Community</li></a>
+ <a href=""><li>Info</li></a>
+ <a href=""><li>Privacy policy</li></a>
+ <a href=""><li>Actions</li></a>
+ <a href=""><li>Contact</li></a>
+    </ul>
+    
+ <p id="down">©2023 {'OctoCamp'}.All rights are reserved</p>
+</section>
+
+
+
+
+
+
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+        
+        
+        <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("show")
+            });
+        </script>

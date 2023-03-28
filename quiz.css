@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*
+{
+   font-family: 'Inconsolata', monospace; 
+}
+
+
+
+.content {
+  margin-top: 54px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #f1d814;
+  padding: 10px;
+  z-index: 999;
+}
+.left-title {
+  width: 80px;
+  color: #222;
+  background: #f1d814;
+  font-size: 18px;
+  float: left;
+}
+.right-title {
+  width: 150px;
+  text-align: right;
+  float: right;
+  color: #222;
+  background: #f1d814;
+}
+.quiz-body {
+  margin-top: 15px;
+  padding-bottom: 50px;
+}
+.option-block-container {
+  margin-top: 20px;
+  max-width: 420px;
+}
+.option-block {
+  padding: 10px;
+  background: rgba(0,0,0,0.03);
+  border: 1px solid #999;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.result-question {
+  font-weight: bold;
+}
+.c-wrong {
+  margin-left: 20px;
+  color: #ff0000;
+}
+.c-correct {
+  margin-left: 20px;
+  color: green;
+}
+.last-row {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.res-header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
